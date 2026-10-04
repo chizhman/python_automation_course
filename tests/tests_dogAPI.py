@@ -1,26 +1,9 @@
 import pytest
 import requests
 
-BREEDS = {
-    "affenpinscher",
-    "african",
-    "airedale",
-    "akita",
-    "appenzeller",
-    "australian",
-    "bakharwal",
-    "basenji"
-}
+BREEDS = {"affenpinscher","african","airedale","akita","appenzeller","australian","bakharwal","basenji"}
 
-SUB_BREEDS = {
-    "afghan",
-    "basset",
-    "blood",
-    "english",
-    "ibizan",
-    "plott",
-    "walker"
-}
+SUB_BREEDS = {"afghan","basset","blood","english","ibizan","plott","walker"}
 
 class TestDogAPI:
     @pytest.mark.parametrize("breed", BREEDS)
